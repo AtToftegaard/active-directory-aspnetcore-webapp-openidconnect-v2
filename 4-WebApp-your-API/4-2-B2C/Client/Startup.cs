@@ -14,6 +14,7 @@ using TodoListClient.Services;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Identity.Web.UI;
+using System;
 
 namespace WebApp_OpenIDConnect_DotNet
 {
@@ -78,6 +79,7 @@ namespace WebApp_OpenIDConnect_DotNet
         {
             if (env.IsDevelopment())
             {
+                Console.WriteLine("DEVELOPMENT");
                 app.UseDeveloperExceptionPage();
             }
             else
